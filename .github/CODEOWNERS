@@ -1,0 +1,7 @@
+# Pendiente: faltan usuarios de GitHub y permisos verificados.
+# No hay reglas activas. Una lista de nombres en Markdown no solicita revisiones.
+# Al confirmar los cuatro usuarios, añadir una regla global con sus @usuarios.
+# Añadir después reglas específicas por módulo con responsable y suplente.
+# La última regla que coincide prevalece; no se acumulan reglas.
+# Una aprobación de cualquiera de los propietarios de una regla satisface
+# el requisito de propietario; no obliga a que aprueben todos.

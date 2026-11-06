@@ -1,0 +1,14 @@
+.DS_Store
+.env
+.env.*
+!.env.example
+.dev.vars
+*.pem
+*.key
+node_modules/
+.venv/
+__pycache__/
+*.pyc
+coverage/
+dist/
+build/
