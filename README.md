@@ -2,7 +2,7 @@
 
 Base de colaboración para **Iker, Augustin, Sandrine y JoJo**.
 
-Repositorio privado: https://github.com/IkerSanJuan/Settle .
+Repositorio público: https://github.com/IkerSanJuan/Settle .
 Tablero privado: https://github.com/users/IkerSanJuan/projects/1 .
 
 Settle ayuda a estudiantes recién llegados a UC Berkeley a identificar los productos que necesitan para instalarse.
@@ -19,16 +19,19 @@ Abrir http://127.0.0.1:4177 y utilizar la opción de demostración. La autentica
 
 ## Empezar
 
-1. Leer [cómo contribuir](CONTRIBUTING.md) y los [acuerdos del equipo](docs/TEAM.md).
-2. Completar la [definición del producto](docs/PRODUCT.md) y el [arranque técnico](docs/ONBOARDING.md).
-3. Activar la [configuración de GitHub](docs/GITHUB_SETUP.md).
-4. Crear una issue por funcionalidad, asignar responsable y revisor, y abrir una rama desde `main`.
-5. Abrir una pull request (PR), pasar las comprobaciones y obtener revisión antes de integrar.
+**Leer primero [Empieza aquí](docs/START_HERE.md)**: reglas mínimas, primer día y coordinación de los cuatro.
+
+1. [Descargar y ejecutar Settle](docs/ONBOARDING.md).
+2. [Preparar una tarea concreta](docs/TASK_EXAMPLE.md).
+3. Trabajar en una rama y seguir [el flujo de revisión](CONTRIBUTING.md).
+4. Comprobar [cuándo un cambio está terminado](docs/QUALITY.md).
 
 ## Documentación
 
 | Archivo | Para qué sirve |
 | --- | --- |
+| [START_HERE.md](docs/START_HERE.md) | Guía breve para empezar a trabajar |
+| [TASK_EXAMPLE.md](docs/TASK_EXAMPLE.md) | Ejemplo de tarea y criterios de aceptación |
 | [CONTRIBUTING.md](CONTRIBUTING.md) | Ramas, commits, revisión y conflictos |
 | [Invitar al equipo](docs/INVITAR_EQUIPO.md) | Acceso e incorporación de los tres compañeros |
 | [TEAM.md](docs/TEAM.md) | Coordinación entre los cuatro |
@@ -36,7 +39,7 @@ Abrir http://127.0.0.1:4177 y utilizar la opción de demostración. La autentica
 | [ONBOARDING.md](docs/ONBOARDING.md) | Incorporación y ejecución local |
 | [ARCHITECTURE.md](docs/ARCHITECTURE.md) | Módulos y contratos compartidos |
 | [QUALITY.md](docs/QUALITY.md) | Criterios de terminado y validación |
-| [GITHUB_SETUP.md](docs/GITHUB_SETUP.md) | Configuración remota pendiente |
+| [GITHUB_SETUP.md](docs/GITHUB_SETUP.md) | Estado real y configuración de GitHub |
 | [RELEASES.md](docs/RELEASES.md) | Versiones y recuperación |
 | [SECURITY.md](SECURITY.md) | Secretos e incidencias de seguridad |
 | [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) | Convivencia |

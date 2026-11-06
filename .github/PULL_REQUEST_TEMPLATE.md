@@ -4,9 +4,11 @@ Describe el comportamiento antes y después.
 
 Closes #NUMERO
 
+Si resuelve solo parte de la tarea, sustituir por `Refs #NUMERO`.
+
 ## Validación
 
-Indica comprobaciones ejecutadas y resultado. Adjunta evidencia visual si cambia la interfaz.
+Indica comprobaciones ejecutadas y resultado. Para comportamiento: pasos, resultado esperado/observado y navegador. Adjunta evidencia visual si cambia la interfaz. Indica qué no se ha probado.
 
 ## Coordinación y riesgos
 

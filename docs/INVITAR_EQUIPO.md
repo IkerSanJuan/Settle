@@ -5,14 +5,14 @@
 1. Abrir el repositorio `IkerSanJuan/Settle` en GitHub.
 2. Ir a Settings → Collaborators (puede aparecer como Collaborators and teams).
 3. Pulsar Add people y buscar el usuario de GitHub o correo de cada compañero. Confirmar que es la persona correcta.
-4. Enviar una invitación individual a Augustin, Sandrine y JoJo. Mantener el repositorio privado. No compartir tu cuenta ni tu llave SSH.
+4. Enviar una invitación individual a Augustin, Sandrine y JoJo. El repositorio es público, pero para subir cambios siguen necesitando la invitación. No compartir tu cuenta ni tu llave SSH.
 5. Comprobar que los tres aceptan. Si una invitación caduca, reenviarla desde esa pantalla.
 
 En un repositorio personal los colaboradores pueden escribir; la administración sigue en la cuenta propietaria. Para permisos más detallados y propiedad compartida, considerar después una organización.
 
 ## Cada compañero: incorporarse
 
-Aceptar la invitación con la cuenta correcta y seguir [ONBOARDING.md](ONBOARDING.md). Si no aparece el repositorio, comprobar cuenta e invitación antes de pedir que se haga público.
+Aceptar la invitación con la cuenta correcta y seguir [ONBOARDING.md](ONBOARDING.md). Ver el repositorio público no demuestra tener acceso de escritura: comprobar cuenta e invitación si no pueden publicar una rama.
 
 ## Después de aceptar
 
@@ -24,4 +24,4 @@ Hacer una prueba: cada persona abre una PR pequeña desde su rama, otra revisa y
 
 Abrir https://github.com/users/IkerSanJuan/projects/1/settings/access . Añadir los usuarios de Augustin, Sandrine y JoJo con permiso de escritura para que puedan gestionar sus tareas. El acceso al repositorio y al tablero se concede por separado; comprobar ambos con cada persona.
 
-El tablero está vacío y no importa tareas automáticamente. Crear las issues del primer reparto acordado y añadirlas manualmente al tablero.
+El tablero se creó sin importación automática de tareas. Crear las issues del primer reparto acordado y añadirlas manualmente al tablero.

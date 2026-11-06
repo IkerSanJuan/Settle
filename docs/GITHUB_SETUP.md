@@ -1,18 +1,18 @@
 # Configuración de GitHub
 
-Repositorio privado creado: https://github.com/IkerSanJuan/Settle .
+Repositorio público: https://github.com/IkerSanJuan/Settle .
 
 ## Estado de activación
 
 Verificado el 6 de noviembre de 2026:
 
-- Repositorio privado creado en IkerSanJuan y código publicado por SSH en `main`.
+- Repositorio creado en IkerSanJuan y publicado por SSH en `main`; posteriormente convertido a público a petición de Iker.
 - Workflow Quality correcto en GitHub: https://github.com/IkerSanJuan/Settle/actions/runs/42277636735 .
 - Solo squash habilitado; título de PR como mensaje del commit; sugerencia de actualizar ramas y borrado automático tras integrar activados.
-- GitHub muestra que las reglas no se aplicarán en este repositorio privado con la configuración de cuenta actual. No hay protección efectiva de `main`; la revisión es por ahora un acuerdo manual.
+- La API de GitHub confirma `main` sin protección. Al ser público ya admite protecciones en GitHub Free, pero todavía hay que configurarlas. La revisión sigue siendo un acuerdo manual; añadir Markdown no activa controles remotos.
 - Dependabot activo para Actions; ha generado una PR de actualización, pendiente de revisión.
-- Invitaciones a cargo de Iker. CODEOWNERS pendiente de usuarios; contiene solo comentarios.
-- Tablero privado creado, sin importación de tareas: https://github.com/users/IkerSanJuan/projects/1 . Repositorio predeterminado: IkerSanJuan/Settle. Acceso de los compañeros pendiente.
+- Invitaciones enviadas a @augustingoudier-sys y @Noella-cloud; pendientes en la última comprobación. Falta el usuario de JoJo. CODEOWNERS sigue sin reglas activas hasta verificar aceptación y permisos.
+- Tablero privado creado, sin importación de tareas: https://github.com/users/IkerSanJuan/projects/1 . Repositorio predeterminado: IkerSanJuan/Settle. Augustin y Sandrine tienen Write en el tablero; falta JoJo.
 
 ## Ajustes del repositorio
 
@@ -36,7 +36,7 @@ En Settings → Rules → Rulesets o Branches, crear una regla para `main`, con 
 
 Al completar CODEOWNERS, valorar exigir revisión de propietarios, con suplentes para no bloquear al equipo.
 
-Las protecciones de ramas y CODEOWNERS en repositorios privados dependen del plan: comprobar GitHub Pro para cuentas personales o Team para organizaciones. Si el plan no las permite, las reglas documentadas son acuerdos manuales, **no controles exigidos por GitHub**. No hacer público el proyecto ni contratar un plan sin decisión de Iker.
+El repositorio es público y las protecciones están disponibles en GitHub Free. Activarlas cuando haya otra persona con acceso de escritura aceptado para poder revisar las PR. No confundir la configuración recomendada con una configuración ya activa.
 
 ## GitHub Projects
 
@@ -48,7 +48,7 @@ Activar alertas de Dependabot y las funciones de análisis de secretos disponibl
 
 ## Verificación de cierre
 
-- [x] Repositorio privado creado y archivos publicados.
+- [x] Repositorio público y archivos publicados.
 - [x] Workflow ejecutado correctamente en GitHub.
 - [ ] Protecciones activas y probadas con PR de ejemplo.
 - [ ] Tres invitaciones aceptadas y CODEOWNERS actualizado.

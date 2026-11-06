@@ -1,5 +1,7 @@
 # Cómo contribuir
 
+¿Es tu primera tarea? Empieza por [la guía breve](docs/START_HERE.md) y el [ejemplo de issue](docs/TASK_EXAMPLE.md).
+
 ## Flujo diario
 
 1. Elegir una issue en Ready, comprobar dependencias y asignar un responsable y un revisor distinto.
