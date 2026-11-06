@@ -1,25 +1,52 @@
-# Calidad y definición de terminado
+# Quality and definition of done
 
-## Una tarea está terminada cuando
+## A task is done when
 
-- Cumple los criterios de aceptación de su issue.
-- Contempla errores, estados vacíos y permisos aplicables.
-- Incluye pruebas proporcionales al riesgo: regresión para bugs; integración para contratos; recorrido crítico cuando corresponda.
-- Pasa formato, análisis, pruebas y compilación configurados para el producto.
-- Tiene una aprobación independiente y conversaciones resueltas.
-- Actualiza la documentación afectada y no añade secretos ni datos personales.
-- Está integrada en `main`; la issue enlaza la evidencia. Publicada/desplegada es un estado adicional, no implícito.
+- It meets its issue's acceptance criteria.
+- It handles relevant errors, empty states, and permissions.
+- It includes tests proportionate to risk: regression tests for bugs, integration tests for contracts, and critical user flows where relevant.
+- It passes the formatting, linting, tests, and build checks configured for the product.
+- It has an independent approval and resolved review conversations.
+- Affected documentation is updated, with no secrets or personal data added.
+- It is merged into `main` and the issue links to evidence. Released or deployed is a separate status, not implied.
 
-Si hay interfaz, verificar teclado, etiquetas, contraste y tamaños de pantalla pertinentes. Si hay migraciones, probar actualización y recuperación con datos de prueba.
+For UI changes, check keyboard access, labels, contrast, and relevant screen sizes. For migrations, test upgrades and recovery using test data.
 
-## Automatización actual
+## Current automation
 
-`Quality / docs`: comprueba documentos requeridos y destinos de enlaces relativos sencillos. No valida formato exhaustivo, anclas, URLs externas, seguridad ni comportamiento del producto.
+`Quality / docs` checks required documents and simple relative link destinations. It does not comprehensively validate formatting, anchors, external URLs, security, or product behavior.
 
-Cuando se elija la tecnología, añadir controles de formato, análisis, pruebas y compilación. Activarlos como obligatorios en GitHub después de su primera ejecución correcta. No sustituir pruebas reales por un control documental verde.
+The current prototype uses HTML, CSS, and JavaScript with no build step. Add formatting checks and functional tests as relevant behavior is implemented; add a build only if the technology requires it. Make checks required in GitHub after their first successful run. A passing documentation check does not replace product testing.
 
-`Quality / javascript` comprueba la sintaxis de los tres archivos JavaScript actuales con Node.js. No ejecuta recorridos del usuario.
+`Quality / javascript` checks the syntax of the three current JavaScript files using Node.js. It does not execute user flows.
 
-## Fallos en main
+## Failures on main
 
-Priorizar restablecer una versión funcional. Revertir mediante PR si es necesario; nunca ocultar el fallo desactivando controles. Registrar causa, impacto y acción preventiva proporcionada.
+Prioritize restoring a working version. Revert through a PR if necessary; never hide a failure by disabling checks. Record the cause, impact, and proportionate preventive action.
+
+## Basic checks before a PR
+
+From the repository root:
+
+```sh
+python3 scripts/check_docs.py
+node --check web/app.js
+node --check web/data.js
+node --check web/art.js
+```
+
+For documentation-only changes, the documentation check is sufficient. For behavior changes, also run relevant tests and manually verify the affected flow.
+
+## Short manual prototype check
+
+Use a test profile and fictional data. Record what you actually executed; do not mark this list without testing.
+
+| Flow | What to check |
+| --- | --- |
+| Entry | The demo opens without depending on hosted sign-in |
+| Questionnaire | Housing, budget, and owned products affect the selection |
+| Catalog | Search and filters show consistent results and a useful empty state |
+| Saved items | Save, reload, remove, and reload preserve the expected state in the same browser |
+| Modified UI | It works with a keyboard and narrow screen; no new console errors appear |
+
+Record the browser, steps, expected result, observed result, and anything not verified in the PR. Include screenshots only when helpful and without personal data. This guide does not claim that these flows were tested in this documentation update.

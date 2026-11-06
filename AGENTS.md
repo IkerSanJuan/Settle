@@ -1,14 +1,15 @@
-# Instrucciones para asistentes de desarrollo
+# Instructions for development assistants
 
-Settle ayuda a estudiantes recién llegados a UC Berkeley a encontrar los productos que necesitan.
+Settle helps students new to UC Berkeley find the products they need.
 
-- Leer README.md, CONTRIBUTING.md y la issue antes de cambiar código.
-- Trabajar en una rama `codex/<issue>-<descripcion>` y limitarse al objetivo acordado.
-- El prototipo editable está en `web/`. No asumir que `web/` es una salida generada.
-- Coordinar cambios en `app.js`, `style.css`, `index.html` y contratos antes de modificar archivos compartidos.
-- No inventar precios, existencias, integraciones, resultados de pruebas o garantías de autenticación.
-- Conservar créditos, licencias de fuentes y límites documentados del prototipo.
-- No añadir secretos, datos personales, servicios de pago ni desplegar sin autorización.
-- Ejecutar `python3 scripts/check_docs.py` y `node --check` sobre los JavaScript modificados. Añadir validación funcional proporcional al cambio.
-- Actualizar documentación afectada. Explicar qué cambió, cómo se comprobó y qué queda pendiente en la PR.
-- No realizar force push, sobrescribir trabajo ajeno ni integrar cambios sin revisión del equipo.
+- Use English for project documentation, issues, PRs, commit messages, code comments, and product UI.
+- Read README.md, CONTRIBUTING.md, and the issue before changing code.
+- Work on a `codex/<issue>-<description>` branch and stay within the agreed scope.
+- The editable prototype is in `web/`. Do not assume it is generated output.
+- Coordinate changes to `app.js`, `style.css`, `index.html`, and contracts before editing shared files.
+- Do not invent prices, stock availability, integrations, test results, or authentication guarantees.
+- Preserve credits, font licenses, and documented prototype limitations.
+- Do not add secrets, personal data, paid services, or deployments without authorization.
+- Run `python3 scripts/check_docs.py` and `node --check` for modified JavaScript files. Add functional validation proportionate to the change.
+- Update affected documentation. Explain changes, checks performed, and outstanding work in the PR.
+- Do not force-push, overwrite others' work, or merge changes without team review.

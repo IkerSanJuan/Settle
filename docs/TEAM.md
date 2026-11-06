@@ -1,29 +1,31 @@
-# Acuerdos del equipo
+# Team agreements
 
-Los cuatro pueden desarrollar funcionalidades completas. Los roles de coordinación son rotativos y no implican especialidades asignadas.
+All four teammates can develop complete features. Coordination roles rotate and do not imply assigned specialties.
 
-| Persona | Usuario GitHub | Funcionalidad actual | Revisor propuesto |
+| Person | GitHub username | Current feature | Proposed reviewer |
 | --- | --- | --- | --- |
-| Iker | IkerSanJuan (cuenta conectada; confirmar correspondencia) | Por definir | Augustin |
-| Augustin | Pendiente | Por definir | Sandrine |
-| Sandrine | Pendiente | Por definir | JoJo |
-| JoJo | Pendiente | Por definir | Iker |
+| Iker | @IkerSanJuan | To be agreed | Augustin |
+| Augustin | @augustingoudier-sys | To be agreed | Sandrine |
+| Sandrine | @Noella-cloud | To be agreed | JoJo |
+| JoJo | Pending | To be agreed | Iker |
 
-La rotación de revisión es una propuesta inicial: cambiarla según disponibilidad y conocimiento. Cada issue conserva las asignaciones actuales, evitando mantener esta tabla como segundo backlog.
+Invitations were sent to Augustin and Sandrine; they were pending acceptance at the last check. Both have Write access to the board. JoJo's username is still needed. Verify current GitHub access before assigning reviews.
 
-## Coordinación
+The review rotation is an initial proposal: adjust it for availability and knowledge. Issues hold current assignments; do not maintain this table as a second backlog.
 
-- Una tarea activa por persona como objetivo; máximo cuatro tareas en desarrollo. Resolver bloqueos y revisiones antes de empezar más trabajo.
-- Registrar en la issue al final de la jornada el avance útil, siguiente paso y bloqueos. No se exige una reunión diaria.
-- Revisión semanal breve: prioridades, demo integrada, bloqueos y una mejora del proceso.
-- Elegir cada semana una persona que revise la salud de `main` y coordine la integración; no tiene que aprobar todas las PR.
-- Decisiones que cambian contratos o arquitectura: registrar una decisión breve y revisarla antes de implementar dependencias.
-- Si hay desacuerdo, comparar opciones con criterios de usuario, coste y riesgo; registrar la resolución y pedir una tercera opinión cuando haga falta.
+## Coordination
 
-## Tablero propuesto
+- Aim for one active task per person, with at most four tasks in development. Resolve blockers and reviews before starting more work.
+- At the end of a working day, record useful progress, next steps, and blockers in the issue. A daily meeting is not required.
+- Hold a short weekly review of priorities, the integrated demo, blockers, and one process improvement.
+- Each week, choose someone to monitor `main` and coordinate integration; they do not have to approve every PR.
+- Record decisions that change contracts or architecture and review them before implementing dependent work.
+- When disagreeing, compare user impact, cost, and risk; record the resolution and seek a third opinion when needed.
+
+## Team board
 
 Backlog → Ready → In progress → In review → Done.
 
-Ready requiere objetivo claro, criterios verificables, dependencias identificadas y responsable. In review requiere PR lista. Done exige la definición de terminado de [QUALITY.md](QUALITY.md). Un bloqueo se marca con `blocked` y su dependencia, sin ocultar el estado actual.
+Ready requires a clear outcome, verifiable acceptance criteria, identified dependencies, and an owner. In review requires a PR ready for review. Done requires [the definition of done](QUALITY.md). Mark blockers with `blocked` and their dependency without hiding the current status.
 
-Campos: responsable, prioridad (P0/P1/P2), tamaño (S/M/L), dependencia y área. Dividir las tareas L antes de desarrollarlas. P0 se reserva para incidentes críticos; P1 para el objetivo próximo; P2 para mejoras posteriores.
+Minimum fields: owner, priority (P0/P1/P2), and size (S/M/L). Record dependencies in the issue; an Area field is optional and is not configured yet. Split L tasks before development. Reserve P0 for critical incidents, P1 for the next objective, and P2 for later improvements.

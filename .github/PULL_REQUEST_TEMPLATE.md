@@ -1,21 +1,23 @@
-## Problema y cambio
+## Problem and change
 
-Describe el comportamiento antes y después.
+Describe the behavior before and after.
 
-Closes #NUMERO
+Closes #NUMBER
 
-## Validación
+If this resolves only part of the task, replace it with `Refs #NUMBER`.
 
-Indica comprobaciones ejecutadas y resultado. Adjunta evidencia visual si cambia la interfaz.
+## Validation
 
-## Coordinación y riesgos
+List checks performed and their results. For behavior changes, include steps, expected/observed results, and browser. Add visual evidence for UI changes. State what was not tested.
 
-Dependencias, contratos, configuración o migraciones afectadas. Cómo recuperar el comportamiento anterior si falla.
+## Coordination and risks
 
-## Antes de integrar
+List affected dependencies, contracts, configuration, or migrations. Explain how to restore previous behavior if the change fails.
 
-- [ ] Criterios de aceptación cumplidos.
-- [ ] Pruebas pertinentes y comprobaciones correctas.
-- [ ] Documentación actualizada cuando corresponde.
-- [ ] Sin secretos ni datos personales.
-- [ ] Revisión independiente y conversaciones resueltas.
+## Before merging
+
+- [ ] Acceptance criteria met.
+- [ ] Relevant tests and checks pass.
+- [ ] Documentation updated where needed.
+- [ ] No secrets or personal data.
+- [ ] Independent review completed and conversations resolved.

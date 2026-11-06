@@ -1,11 +1,11 @@
-# Publicación de versiones
+# Releases
 
-Durante el desarrollo inicial utilizar `0.x.y`. Antes de `1.0.0`, definir qué API o comportamiento público se considera estable. A partir de ahí usar SemVer: MAJOR para incompatibilidades, MINOR para funciones compatibles y PATCH para correcciones compatibles.
+Use `0.x.y` during initial development. Before `1.0.0`, define which public API or behavior is considered stable. Then follow SemVer: MAJOR for incompatible changes, MINOR for compatible features, and PATCH for compatible bug fixes.
 
-1. Elegir un commit de `main` con controles correctos y revisión completada.
-2. Revisar compatibilidad, configuración, migraciones y recuperación.
-3. Actualizar CHANGELOG y crear una etiqueta `vX.Y.Z` y una GitHub Release.
-4. Validar en el entorno de prueba; la publicación de código no implica despliegue automático.
-5. Registrar versión desplegada, responsable y evidencia de comprobación.
+1. Choose a reviewed commit on `main` with passing checks.
+2. Review compatibility, configuration, migrations, and recovery.
+3. Update CHANGELOG and create a `vX.Y.Z` tag and a GitHub Release.
+4. Validate in a test environment; publishing code does not imply automatic deployment.
+5. Record the deployed version, owner, and validation evidence.
 
-No modificar etiquetas de versiones ya publicadas. Si falla un despliegue, recuperar el artefacto anterior cuando sea compatible; las migraciones de datos requieren un plan específico. Automatización de despliegue pendiente de definir el producto y su alojamiento.
+Do not modify published release tags. If a deployment fails, restore the previous artifact when compatible; data migrations require a specific plan. Deployment automation awaits product and hosting decisions.

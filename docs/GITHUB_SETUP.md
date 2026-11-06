@@ -1,58 +1,60 @@
-# Configuración de GitHub
+# GitHub setup
 
-Repositorio privado creado: https://github.com/IkerSanJuan/Settle .
+[Public repository](https://github.com/IkerSanJuan/Settle).
 
-## Estado de activación
+## Activation status
 
-Verificado el 6 de noviembre de 2026:
+Last verified on November 6, 2026:
 
-- Repositorio privado creado en IkerSanJuan y código publicado por SSH en `main`.
-- Workflow Quality correcto en GitHub: https://github.com/IkerSanJuan/Settle/actions/runs/42277636735 .
-- Solo squash habilitado; título de PR como mensaje del commit; sugerencia de actualizar ramas y borrado automático tras integrar activados.
-- GitHub muestra que las reglas no se aplicarán en este repositorio privado con la configuración de cuenta actual. No hay protección efectiva de `main`; la revisión es por ahora un acuerdo manual.
-- Dependabot activo para Actions; ha generado una PR de actualización, pendiente de revisión.
-- Invitaciones a cargo de Iker. CODEOWNERS pendiente de usuarios; contiene solo comentarios.
-- Tablero privado creado, sin importación de tareas: https://github.com/users/IkerSanJuan/projects/1 . Repositorio predeterminado: IkerSanJuan/Settle. Acceso de los compañeros pendiente.
+- The repository was created under IkerSanJuan and pushed to `main` using SSH; it was later made public at Iker's request.
+- The Quality workflow passed in GitHub: [initial successful run](https://github.com/IkerSanJuan/Settle/actions/runs/42277636735).
+- Squash merging only; PR title used as the commit message; branch update suggestions and automatic deletion after merging are enabled.
+- GitHub's API confirms that `main` is unprotected. As a public repository, it supports protections on GitHub Free, but they still need configuration. Review remains a manual team agreement; adding Markdown does not enable remote controls.
+- Dependabot is configured for Actions and has opened an update PR awaiting review.
+- Invitations were sent to @augustingoudier-sys and @Noella-cloud and were pending at the last check. JoJo's username is still needed. CODEOWNERS has no active rules until acceptance and permissions are verified.
+- The [private board](https://github.com/users/IkerSanJuan/projects/1) was created without task imports. Default repository: IkerSanJuan/Settle. Augustin and Sandrine have Write access to the board; JoJo is pending.
 
-## Ajustes del repositorio
+## Repository settings
 
-- Rama predeterminada: `main`.
-- Permitir Squash and merge; usar el título de PR para el commit integrado.
-- Desactivar merge commits y rebase merge para mantener un único criterio de integración.
-- Activar eliminación automática de ramas integradas.
-- Activar Issues; usar las plantillas incluidas.
-- Configurar invitaciones según [INVITAR_EQUIPO.md](INVITAR_EQUIPO.md).
+- Default branch: `main`.
+- Allow Squash and merge; use the PR title for the squash commit.
+- Disable merge commits and rebase merging to keep one integration method.
+- Enable automatic deletion of merged branches.
+- Enable Issues and use the included templates.
+- Follow [INVITING_TEAM.md](INVITING_TEAM.md) for invitations.
 
-## Proteger main
+## Protect main
 
-En Settings → Rules → Rulesets o Branches, crear una regla para `main`, con estado activo:
+In Settings → Rules → Rulesets or Branches, create an active rule for `main`:
 
-- Exigir pull request y al menos una aprobación independiente.
-- Invalidar aprobaciones tras nuevos cambios y resolver conversaciones antes de integrar.
-- Exigir `docs` y `javascript` tras su primera ejecución; seleccionar los nombres exactos que muestre GitHub Actions.
-- Exigir rama actualizada con `main` antes de integrar.
-- Bloquear force push y borrado de `main`.
-- Aplicar a administradores cuando la opción esté disponible; no crear excepciones rutinarias.
+- Require a pull request and at least one independent approval.
+- Dismiss stale approvals after new changes and require resolved conversations.
+- Require `docs` and `javascript` after their first successful run; select the exact check names shown by GitHub Actions.
+- Require branches to be up to date with `main` before merging.
+- Block force pushes and deletion of `main`.
+- Apply rules to administrators where available; avoid routine bypasses.
 
-Al completar CODEOWNERS, valorar exigir revisión de propietarios, con suplentes para no bloquear al equipo.
+After completing CODEOWNERS, consider requiring owner reviews, with backups to avoid blocking the team.
 
-Las protecciones de ramas y CODEOWNERS en repositorios privados dependen del plan: comprobar GitHub Pro para cuentas personales o Team para organizaciones. Si el plan no las permite, las reglas documentadas son acuerdos manuales, **no controles exigidos por GitHub**. No hacer público el proyecto ni contratar un plan sin decisión de Iker.
+The repository is public, so protections are available on GitHub Free. Enable them once another person has accepted write access and can review PRs. Recommended settings are not necessarily active settings.
 
 ## GitHub Projects
 
-Tablero privado creado: https://github.com/users/IkerSanJuan/projects/1 . Compartir su acceso por separado desde Settings → Manage access. Columnas: Backlog, Ready, In progress, In review, Done. Añadir campos Priority, Size y Area; utilizar Assignees para responsables. Crear issues desde el reparto de PRODUCT después de acordarlo. El tablero está vacío por decisión de Iker, sin importación automática de tareas. Tiene campos Priority, Size y Estimate; Area queda como ampliación opcional.
+Share the [private board](https://github.com/users/IkerSanJuan/projects/1) separately through Settings → Manage access. Columns: Backlog, Ready, In progress, In review, Done. Use Assignees for owners. Priority, Size, and Estimate fields exist; Area is an optional future addition.
 
-## Seguridad
+Create issues from the proposed PRODUCT assignments after agreeing on them. The board was created empty at Iker's request, with no automatic task imports. Add agreed issues manually.
 
-Activar alertas de Dependabot y las funciones de análisis de secretos disponibles en el plan. GitHub Actions tendrá permisos de lectura por defecto. No hay despliegue automático.
+## Security
 
-## Verificación de cierre
+Enable Dependabot alerts and secret scanning features available on the plan. GitHub Actions should use read-only permissions by default. There is no automatic deployment.
 
-- [x] Repositorio privado creado y archivos publicados.
-- [x] Workflow ejecutado correctamente en GitHub.
-- [ ] Protecciones activas y probadas con PR de ejemplo.
-- [ ] Tres invitaciones aceptadas y CODEOWNERS actualizado.
-- [x] Tablero privado creado.
-- [ ] Acceso al tablero compartido con los tres compañeros.
+## Completion checklist
 
-No marcar pasos solo porque estén documentados.
+- [x] Public repository and files published.
+- [x] Workflow ran successfully in GitHub.
+- [ ] Protections enabled and tested with an example PR.
+- [ ] Three invitations accepted and CODEOWNERS updated.
+- [x] Private board created.
+- [ ] Board access shared with all three teammates.
+
+Do not mark a step complete merely because it is documented.

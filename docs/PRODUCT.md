@@ -1,26 +1,26 @@
-# Settle — definición del producto
+# Settle — product definition
 
-## Objetivo confirmado
+## Confirmed goal
 
-Ayudar a newcomers a encontrar los productos que necesitan para instalarse. El primer público son estudiantes nuevos en UC Berkeley.
+Help newcomers find the products they need to settle in. The initial audience is students new to UC Berkeley.
 
-## Primera versión propuesta
+## Proposed first version
 
-Cuestionario breve sobre alojamiento, presupuesto y cosas que ya tienen; recomendaciones de esenciales; catálogo con enlaces a tiendas; lista personal para organizar compras. El prototipo existente sirve para validar este recorrido.
+A short questionnaire about housing, budget, and items already owned; essential product recommendations; a catalog with retailer links; and a personal shopping checklist. Use the existing prototype to validate this flow.
 
-No se incluyen inicialmente pagos, logística, inventario en tiempo real ni cobertura de otras universidades. El equipo debe confirmar estos límites antes de comprometer entregas.
+Payments, logistics, live inventory, and other universities are initially out of scope. The team must confirm these boundaries before committing to deliveries.
 
-## Medición propuesta
+## Proposed measurement
 
-Observar si un estudiante completa el cuestionario, encuentra productos adecuados y termina una lista útil. Medir tiempo de preparación y utilidad percibida en pruebas consentidas; acordar objetivos tras obtener una línea base. No hay analítica implementada.
+Observe whether a student completes the questionnaire, finds suitable products, and creates a useful checklist. Measure preparation time and perceived usefulness in consented research; agree on targets after establishing a baseline. Analytics are not implemented.
 
-## Reparto inicial propuesto
+## Proposed initial assignments
 
-| Incremento | Responsable propuesto | Revisor | Criterio verificable |
+| Increment | Proposed owner | Reviewer | Verifiable criterion |
 | --- | --- | --- | --- |
-| Cuestionario y perfil de llegada | Iker | Augustin | Se pueden revisar y corregir alojamiento, presupuesto y productos propios |
-| Catálogo y calidad de datos | Augustin | Sandrine | Cada producto tiene categoría, fuente y precio explícitamente orientativo o verificado |
-| Recomendaciones y presupuesto | Sandrine | JoJo | No recomienda productos ya disponibles y explica qué queda fuera del presupuesto |
-| Lista personal y seguimiento | JoJo | Iker | Se pueden guardar, marcar y recuperar productos al recargar el navegador |
+| Arrival questionnaire and profile | Iker | Augustin | Housing, budget, and owned products can be reviewed and corrected |
+| Catalog and data quality | Augustin | Sandrine | Each product has a category, source, and price explicitly marked as illustrative or verified |
+| Recommendations and budget | Sandrine | JoJo | Already owned products are not recommended, and items outside the budget are explained |
+| Personal checklist and tracking | JoJo | Iker | Products can be saved, marked, and recovered after reloading the browser |
 
-Son propuestas, no asignaciones aceptadas. Crear una issue por incremento al acordarlas. El prototipo concentra comportamiento en `app.js`: extraer módulos en una PR coordinada antes de que varias personas lo modifiquen simultáneamente.
+These are proposals, not accepted assignments. Create an issue for each agreed increment. Much of the prototype's behavior is in `app.js`: extract modules through a coordinated PR before several people edit it simultaneously.

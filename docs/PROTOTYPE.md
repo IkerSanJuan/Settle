@@ -1,15 +1,15 @@
-# Prototipo inicial de Settle
+# Initial Settle prototype
 
-Importado del prototipo local `settle-student`, sin modificar el original ni su despliegue. Los archivos editables están en `web/`; no son una compilación generada.
+Imported from the local `settle-student` prototype without changing the original or its deployment. Editable files are in `web/`; they are not generated build output.
 
-Incluye cuestionario de llegada, alojamiento y presupuesto; selección sugerida de productos; búsqueda y categorías; comparación orientativa entre tiendas; favoritos y lista de tareas guardados en el navegador.
+It includes an arrival, housing, and budget questionnaire; suggested products; search and categories; illustrative retailer comparisons; favorites and a checklist stored in the browser.
 
-El foco actual es Berkeley. Las sugerencias y cantidades son ilustrativas; precios, stock, entrega y distancias no se actualizan en tiempo real. Los enlaces a tiendas abren búsquedas de catálogo. La aplicación no realiza compras.
+The current focus is Berkeley. Suggestions and amounts are illustrative; prices, stock, delivery, and distances are not updated in real time. Retailer links open catalog searches. The application does not make purchases.
 
-El inicio de sesión del alojamiento anterior depende de Sites. El servidor local no implementa esas rutas: usar la demostración. Google, Apple y Facebook OAuth no están configurados. Los parámetros de navegación no son una barrera de seguridad. No hay backend de cuentas ni sincronización entre dispositivos.
+Sign-in on the previous hosting depends on Sites. The local server does not implement those routes: use the demo. Google, Apple, and Facebook OAuth are not configured. Navigation parameters are not a security boundary. There is no account backend or cross-device synchronization.
 
-La foto de Berkeley es de Jeremy Huang vía Unsplash y conserva su atribución en la aplicación. Las licencias de las fuentes están en `web/assets/fonts/`. Conservar créditos y licencias.
+The Berkeley photo is by Jeremy Huang via Unsplash and retains its attribution in the application. Font licenses are in `web/assets/fonts/`. Preserve credits and licenses.
 
-No se incluyen la configuración de publicación de Sites ni su historial Git. Publicar este repositorio no modifica ni despliega automáticamente el Site existente.
+Sites publishing configuration and its Git history are not included. Publishing this repository does not change or automatically deploy the existing Site.
 
-Antes de un lanzamiento público: validar productos y presupuestos, revisar accesibilidad y flujos en móvil, definir tratamiento de datos e integrar autenticación y fuentes de catálogo reales si entran en alcance. La comprobación de sintaxis no sustituye estas pruebas.
+Before a public launch, validate products and budgets, review accessibility and mobile flows, define data handling, and integrate real authentication and catalog sources if within scope. Syntax checks do not replace these tests.

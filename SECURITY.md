@@ -1,19 +1,19 @@
-# Seguridad
+# Security
 
-No guardar contraseñas, tokens, claves, datos de clientes ni archivos `.env` reales en Git. Usar secretos del entorno o de GitHub y permisos mínimos. Cada persona utiliza su propia cuenta con doble factor.
+Do not commit passwords, tokens, keys, customer data, or real `.env` files. Use environment or GitHub secrets and least-privilege permissions. Everyone uses their own account with two-factor authentication.
 
-## Comunicar una vulnerabilidad
+## Report a vulnerability
 
-No abrir una issue con detalles explotables ni credenciales. Usar el canal privado del equipo o Private vulnerability reporting si está habilitado. Antes de invitar colaboradores, registrar un contacto privado y una persona suplente; ambos están pendientes de designar.
+Do not open a public issue with exploitable details or credentials. Use a private team channel or GitHub private vulnerability reporting if enabled. Designate a private security contact and backup; both are still pending.
 
-Incluir componente, impacto, pasos seguros de reproducción y versiones afectadas. Confirmar recepción lo antes posible y acordar responsable y seguimiento privado.
+Include the component, impact, safe reproduction steps, and affected versions. Acknowledge receipt promptly and agree on an owner and private follow-up.
 
-## Si se publica un secreto
+## If a secret is exposed
 
-Revocarlo o rotarlo inmediatamente, revisar accesos y avisar al equipo. Borrar la línea en un commit no elimina el secreto del historial. Coordinar cualquier limpieza del historial y recuperación de copias.
+Revoke or rotate it immediately, review access, and notify the team. Deleting a line in a commit does not remove the secret from history. Coordinate any history cleanup and recovery of copies.
 
-## Dependencias y automatización
+## Dependencies and automation
 
-Revisar dependencias y conservar sus archivos de bloqueo. Dependabot está configurado para GitHub Actions; añadir el ecosistema del producto al definirlo. Fijar acciones a commits completos y revisar actualizaciones. No ejecutar código de PR no confiables con secretos ni usar `pull_request_target` para ejecutar su contenido.
+Review dependencies and retain lockfiles. Dependabot is configured for GitHub Actions; add the product ecosystem when defined. Pin actions to full commit hashes and review updates. Do not run untrusted PR code with secrets or use `pull_request_target` to execute its contents.
 
-Versiones del producto con soporte: pendientes de la primera publicación. No se promete todavía un plazo de parcheo.
+Supported product versions will be defined with the first release. No patching response time is promised yet.

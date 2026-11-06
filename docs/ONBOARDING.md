@@ -1,17 +1,17 @@
-# Incorporación
+# Onboarding
 
-## Antes de empezar
+## Before starting
 
-1. Aceptar acceso al repositorio con la cuenta individual de GitHub y activar autenticación de dos factores.
-2. Instalar Git y configurar nombre y correo de autor (puede ser el correo privado de GitHub).
-3. Clonar el repositorio; no compartir una misma carpeta de trabajo entre personas.
-4. Leer CONTRIBUTING, TEAM, SECURITY y la issue asignada.
-5. Ejecutar `python3 scripts/check_docs.py` desde la raíz para comprobar esta base.
+1. Accept repository access with your own GitHub account and enable two-factor authentication.
+2. Install Git and configure your author name and email (GitHub's private email is an option).
+3. Clone the repository; do not share one working directory between people.
+4. Read CONTRIBUTING, TEAM, SECURITY, and your assigned issue.
+5. Run `python3 scripts/check_docs.py` from the repository root to check the documentation baseline.
 
-## Unirse al repositorio
+## Join the repository
 
-1. Aceptar la invitación recibida en GitHub con la cuenta invitada.
-2. En GitHub Desktop: File → Clone repository → elegir `IkerSanJuan/Settle`. Alternativa por terminal con SSH configurado:
+1. Accept the GitHub invitation using the invited account.
+2. In GitHub Desktop: File → Clone repository → choose `IkerSanJuan/Settle`. Alternatively, with SSH configured:
 
 ```sh
 git clone git@github.com:IkerSanJuan/Settle.git
@@ -19,22 +19,22 @@ cd Settle
 python3 -m http.server 4177 --bind 127.0.0.1 --directory web
 ```
 
-3. Abrir http://127.0.0.1:4177 y entrar en la demostración.
-4. En GitHub Desktop, actualizar `main`, crear una rama para la issue, guardar cambios, publicar la rama y abrir una PR. Otra persona revisará antes de integrar.
-5. No compartir llaves SSH. Cada colaborador configura la suya o utiliza la autenticación de GitHub Desktop.
+3. Open http://127.0.0.1:4177 and enter the demo.
+4. In GitHub Desktop, update `main`, create a branch for the issue, commit changes, publish the branch, and open a PR. Another person reviews before merging.
+5. Do not share SSH keys. Each collaborator configures their own key or uses GitHub Desktop authentication.
 
-## Tecnologías actuales
+## Current technologies
 
-HTML, CSS y JavaScript sin compilación. Python 3 sirve los archivos localmente. Node.js 22 permite comprobar sintaxis con `node --check web/app.js`, `node --check web/data.js` y `node --check web/art.js`. No hay gestor de dependencias de aplicación ni backend. No hacen falta secretos para la demostración.
+HTML, CSS, and JavaScript with no build step. Python 3 serves the files locally. Node.js 22 checks syntax using `node --check web/app.js`, `node --check web/data.js`, and `node --check web/art.js`. There is no application package manager or backend. No secrets are needed for the demo.
 
-## Completar si evolucionan las tecnologías
+## Update this guide if the technology changes
 
-El responsable de la primera integración documentará en una PR:
+The owner of the first integration must document in a PR:
 
-- Versiones del lenguaje, herramientas y gestor de dependencias.
-- Comandos exactos de instalación, desarrollo, formato, análisis, pruebas y compilación.
-- Variables requeridas en `.env.example`, solo con valores ficticios.
-- Datos de prueba y servicios locales; nunca copiar datos personales de producción.
-- URL local y pasos para verificar que el arranque funciona.
+- Language, tool, and package manager versions.
+- Exact installation, development, formatting, linting, testing, and build commands.
+- Required variables in `.env.example`, with fictional values only.
+- Test data and local services; never copy personal production data.
+- The local URL and steps to verify startup.
 
-Una segunda persona debe seguir las instrucciones desde una copia limpia antes de dar el arranque por terminado. Mantener los comandos anteriores actualizados si cambia la arquitectura.
+A second person must follow the instructions from a clean clone before setup is considered complete. Keep the commands above current when the architecture changes.
