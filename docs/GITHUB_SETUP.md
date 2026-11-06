@@ -1,10 +1,18 @@
 # Configuración de GitHub
 
-Destino previsto: repositorio privado `IkerSanJuan/Settle`.
+Repositorio privado creado: https://github.com/IkerSanJuan/Settle .
 
 ## Estado de activación
 
-Los archivos de esta carpeta no activan por sí solos las protecciones, invitaciones ni un tablero. Registrar aquí los ajustes efectivamente comprobados al publicar. CODEOWNERS está pendiente de usuarios; contiene solo comentarios.
+Verificado el 6 de noviembre de 2026:
+
+- Repositorio privado creado en IkerSanJuan y código publicado por SSH en `main`.
+- Workflow Quality correcto en GitHub: https://github.com/IkerSanJuan/Settle/actions/runs/42277636735 .
+- Solo squash habilitado; título de PR como mensaje del commit; sugerencia de actualizar ramas y borrado automático tras integrar activados.
+- GitHub muestra que las reglas no se aplicarán en este repositorio privado con la configuración de cuenta actual. No hay protección efectiva de `main`; la revisión es por ahora un acuerdo manual.
+- Dependabot activo para Actions; ha generado una PR de actualización, pendiente de revisión.
+- Invitaciones a cargo de Iker. CODEOWNERS pendiente de usuarios; contiene solo comentarios.
+- Tablero pendiente de autorización específica de creación.
 
 ## Ajustes del repositorio
 
@@ -40,8 +48,8 @@ Activar alertas de Dependabot y las funciones de análisis de secretos disponibl
 
 ## Verificación de cierre
 
-- [ ] Repositorio privado creado y archivos publicados.
-- [ ] Workflow ejecutado correctamente en GitHub.
+- [x] Repositorio privado creado y archivos publicados.
+- [x] Workflow ejecutado correctamente en GitHub.
 - [ ] Protecciones activas y probadas con PR de ejemplo.
 - [ ] Tres invitaciones aceptadas y CODEOWNERS actualizado.
 - [ ] Tablero creado y compartido.
