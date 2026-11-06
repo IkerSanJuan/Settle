@@ -1,38 +1,38 @@
-# Ejemplo de una tarea lista para empezar
+# Example of a task ready to start
 
-Ejemplo didáctico; no es una issue creada ni una funcionalidad comprometida.
+This is a teaching example, not an existing issue or a committed feature.
 
-## Título
+## Title
 
-`[Funcionalidad] Conservar los productos guardados al recargar`
+`[Feature] Keep saved products after reloading`
 
-## Problema y alcance
+## Problem and scope
 
-Un estudiante quiere recuperar su selección de productos después de cerrar y volver a abrir Settle en el mismo navegador. Revisar el comportamiento existente y corregirlo solo si no cumple los criterios.
+A student wants to recover their product selection after closing and reopening Settle in the same browser. Inspect the existing behavior and fix it only if it fails the criteria.
 
-## Responsable y coordinación
+## Ownership and coordination
 
-- Responsable: elegir una persona.
-- Revisor: otra persona con acceso de escritura aceptado.
-- Archivos previstos: `web/app.js` y, si hace falta, sus pruebas.
-- Dependencias: acordar si cambia el formato guardado en el navegador.
-- Fuera de alcance: cuentas, sincronización entre dispositivos y compras.
+- Owner: choose one person.
+- Reviewer: another person who has accepted repository write access.
+- Expected files: `web/app.js` and its tests, if needed.
+- Dependencies: agree on any changes to the browser storage format.
+- Out of scope: accounts, cross-device synchronization, and purchases.
 
-## Criterios de aceptación
+## Acceptance criteria
 
-- [ ] Un producto guardado sigue en la selección tras recargar en el mismo navegador y origen.
-- [ ] Un producto eliminado no reaparece tras recargar.
-- [ ] Un fallo de almacenamiento no se presenta como un guardado correcto.
+- [ ] A saved product remains selected after reloading in the same browser and origin.
+- [ ] A removed product does not reappear after reloading.
+- [ ] A storage failure is not presented as a successful save.
 
-## Cómo demostrarlo
+## How to demonstrate it
 
-Usar la demo con datos ficticios. Guardar un producto, recargar, comprobarlo, eliminarlo y recargar de nuevo. Registrar navegador, resultado y límites de la prueba en la PR. Si se corrige un bug, incluir una comprobación de regresión proporcional al cambio.
+Use the demo with fictional data. Save a product, reload, check it, remove it, and reload again. Record the browser, result, and test limitations in the PR. For a bug fix, include a regression check proportionate to the change.
 
-## Cómo usar este ejemplo
+## How to use this example
 
-1. Crear una issue desde la plantilla correspondiente y sustituir el ejemplo por la necesidad real.
-2. Añadirla manualmente al tablero privado, acordar responsable y revisor, y pasarla a Ready.
-3. Usar su número real en la rama, por ejemplo `fix/NUMERO-guardados`.
-4. En la PR, escribir `Closes #NUMERO` solo si el cambio resuelve toda la issue. Si es parcial, usar `Refs #NUMERO` y dejar pendientes explícitos.
+1. Create an issue using the relevant template and replace the example with the actual need.
+2. Add it manually to the private board, agree on an owner and reviewer, and move it to Ready.
+3. Use its actual issue number in the branch, for example `fix/NUMBER-saved-items`.
+4. Write `Closes #NUMBER` in the PR only if it resolves the whole issue. For a partial change, use `Refs #NUMBER` and make remaining work explicit.
 
-No copiar los campos sin completarlos ni convertir el ejemplo en un segundo backlog.
+Complete the fields instead of copying them unchanged. Do not turn this example into a second backlog.

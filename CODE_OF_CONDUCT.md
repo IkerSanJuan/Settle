@@ -1,7 +1,7 @@
-# Acuerdo de convivencia
+# Code of conduct
 
-Iker, Augustin, Sandrine y JoJo se comprometen a tratarse con respeto, dar crédito al trabajo ajeno y discutir ideas con argumentos. Las revisiones comentan el trabajo, sin ataques personales. Se respetan diferencias de experiencia, horarios, idioma y disponibilidad.
+Iker, Augustin, Sandrine, and JoJo agree to treat each other respectfully, credit others' work, and discuss ideas with reasons. Reviews address the work without personal attacks. Respect differences in experience, schedules, language, and availability.
 
-No se toleran acoso, discriminación, amenazas ni publicación de información privada. Ante un incidente, contactar en privado con una persona del equipo no implicada y acordar medidas proporcionadas. Designar un contacto y suplente antes de incorporar personas externas.
+Harassment, discrimination, threats, and disclosure of private information are not tolerated. Report an incident privately to an uninvolved team member and agree on proportionate action. Designate a contact and backup before accepting outside contributors.
 
-Este es un acuerdo propio del equipo, no una reproducción ni certificación de un código externo.
+This is the team's own agreement, not a reproduction of or certification under an external code.

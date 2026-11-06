@@ -1,17 +1,17 @@
 ---
-name: Tarea técnica o documental
-about: Registrar mantenimiento, configuración o documentación
-title: "[Tarea] "
+name: Technical or documentation task
+about: Track maintenance, configuration, or documentation
+title: "[Task] "
 ---
 
-## Objetivo
+## Objective
 
-## Criterios de aceptación
+## Acceptance criteria
 
 - [ ]
 
-## Responsable y revisor
+## Owner and reviewer
 
-## Dependencias y archivos compartidos
+## Dependencies and shared files
 
-## Cómo se verificará
+## How to verify

@@ -1,23 +1,23 @@
 ---
-name: Error
-about: Registrar un fallo reproducible sin datos sensibles
-title: "[Error] "
+name: Bug
+about: Report a reproducible problem without sensitive data
+title: "[Bug] "
 ---
 
-## Comportamiento esperado y observado
+## Expected and observed behavior
 
-## Pasos para reproducir
+## Steps to reproduce
 
 1.
 
-## Entorno y versión
+## Environment and version
 
-## Impacto y frecuencia
+## Impact and frequency
 
-## Evidencia sin datos sensibles
+## Evidence without sensitive data
 
-## Criterio para darlo por resuelto
+## Acceptance criteria for the fix
 
-## Responsable y revisor
+## Owner and reviewer
 
-Para vulnerabilidades seguir SECURITY.md; no publicar detalles explotables aquí.
+For vulnerabilities, follow SECURITY.md; do not publish exploitable details here.

@@ -1,32 +1,32 @@
-# Calidad y definición de terminado
+# Quality and definition of done
 
-## Una tarea está terminada cuando
+## A task is done when
 
-- Cumple los criterios de aceptación de su issue.
-- Contempla errores, estados vacíos y permisos aplicables.
-- Incluye pruebas proporcionales al riesgo: regresión para bugs; integración para contratos; recorrido crítico cuando corresponda.
-- Pasa formato, análisis, pruebas y compilación configurados para el producto.
-- Tiene una aprobación independiente y conversaciones resueltas.
-- Actualiza la documentación afectada y no añade secretos ni datos personales.
-- Está integrada en `main`; la issue enlaza la evidencia. Publicada/desplegada es un estado adicional, no implícito.
+- It meets its issue's acceptance criteria.
+- It handles relevant errors, empty states, and permissions.
+- It includes tests proportionate to risk: regression tests for bugs, integration tests for contracts, and critical user flows where relevant.
+- It passes the formatting, linting, tests, and build checks configured for the product.
+- It has an independent approval and resolved review conversations.
+- Affected documentation is updated, with no secrets or personal data added.
+- It is merged into `main` and the issue links to evidence. Released or deployed is a separate status, not implied.
 
-Si hay interfaz, verificar teclado, etiquetas, contraste y tamaños de pantalla pertinentes. Si hay migraciones, probar actualización y recuperación con datos de prueba.
+For UI changes, check keyboard access, labels, contrast, and relevant screen sizes. For migrations, test upgrades and recovery using test data.
 
-## Automatización actual
+## Current automation
 
-`Quality / docs`: comprueba documentos requeridos y destinos de enlaces relativos sencillos. No valida formato exhaustivo, anclas, URLs externas, seguridad ni comportamiento del producto.
+`Quality / docs` checks required documents and simple relative link destinations. It does not comprehensively validate formatting, anchors, external URLs, security, or product behavior.
 
-El prototipo actual usa HTML, CSS y JavaScript sin compilación. Añadir controles de formato y pruebas funcionales cuando se implemente el comportamiento correspondiente; añadir compilación solo si la tecnología lo requiere. Activarlos como obligatorios en GitHub después de su primera ejecución correcta. No sustituir pruebas reales por un control documental verde.
+The current prototype uses HTML, CSS, and JavaScript with no build step. Add formatting checks and functional tests as relevant behavior is implemented; add a build only if the technology requires it. Make checks required in GitHub after their first successful run. A passing documentation check does not replace product testing.
 
-`Quality / javascript` comprueba la sintaxis de los tres archivos JavaScript actuales con Node.js. No ejecuta recorridos del usuario.
+`Quality / javascript` checks the syntax of the three current JavaScript files using Node.js. It does not execute user flows.
 
-## Fallos en main
+## Failures on main
 
-Priorizar restablecer una versión funcional. Revertir mediante PR si es necesario; nunca ocultar el fallo desactivando controles. Registrar causa, impacto y acción preventiva proporcionada.
+Prioritize restoring a working version. Revert through a PR if necessary; never hide a failure by disabling checks. Record the cause, impact, and proportionate preventive action.
 
-## Comprobaciones básicas antes de una PR
+## Basic checks before a PR
 
-Desde la raíz del repositorio:
+From the repository root:
 
 ```sh
 python3 scripts/check_docs.py
@@ -35,18 +35,18 @@ node --check web/data.js
 node --check web/art.js
 ```
 
-Si solo cambia documentación, basta el control documental. Si cambia el comportamiento, además de la sintaxis ejecutar las pruebas pertinentes y comprobar manualmente el recorrido afectado.
+For documentation-only changes, the documentation check is sufficient. For behavior changes, also run relevant tests and manually verify the affected flow.
 
-## Prueba manual breve del prototipo
+## Short manual prototype check
 
-Utilizar un perfil de prueba y datos ficticios. Registrar lo ejecutado, no marcar esta lista sin probarla.
+Use a test profile and fictional data. Record what you actually executed; do not mark this list without testing.
 
-| Recorrido | Qué comprobar |
+| Flow | What to check |
 | --- | --- |
-| Entrada | La demo se abre sin depender del inicio de sesión alojado |
-| Cuestionario | Alojamiento, presupuesto y productos propios se reflejan en la selección |
-| Catálogo | Buscar y filtrar muestra resultados coherentes y un estado útil cuando no hay coincidencias |
-| Guardados | Guardar, recargar, eliminar y recargar conserva el estado esperado en el mismo navegador |
-| Interfaz modificada | Se puede usar con teclado y en pantalla estrecha; no aparecen errores nuevos en la consola |
+| Entry | The demo opens without depending on hosted sign-in |
+| Questionnaire | Housing, budget, and owned products affect the selection |
+| Catalog | Search and filters show consistent results and a useful empty state |
+| Saved items | Save, reload, remove, and reload preserve the expected state in the same browser |
+| Modified UI | It works with a keyboard and narrow screen; no new console errors appear |
 
-En la PR anotar navegador, pasos, resultado esperado, resultado observado y lo que no se pudo verificar. Capturas solo cuando ayuden a revisar y siempre sin datos personales. Esta lista es una guía; no afirma que esos recorridos hayan sido probados en esta actualización documental.
+Record the browser, steps, expected result, observed result, and anything not verified in the PR. Include screenshots only when helpful and without personal data. This guide does not claim that these flows were tested in this documentation update.

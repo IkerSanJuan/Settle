@@ -1,18 +1,18 @@
-# NNNN — Título
+# NNNN — Title
 
-- Fecha:
-- Estado: propuesta
-- Participantes:
-- Issue o PR:
+- Date:
+- Status: proposed
+- Participants:
+- Issue or PR:
 
-## Contexto y problema
+## Context and problem
 
-## Opciones y consecuencias
+## Options and tradeoffs
 
-## Decisión y motivos
+## Decision and rationale
 
-## Impacto, compatibilidad y migración
+## Impact, compatibility, and migration
 
-## Cómo comprobaremos el resultado
+## How we will verify the result
 
-## Decisión sustituida, si procede
+## Superseded decision, if applicable

@@ -1,25 +1,25 @@
-# Funcionalidad: título
+# Feature: title
 
 - Issue:
-- Responsable:
-- Revisor:
+- Owner:
+- Reviewer:
 
-## Problema del usuario y resultado esperado
+## User problem and expected outcome
 
-## Alcance y exclusiones
+## Scope and exclusions
 
-## Criterios de aceptación verificables
+## Verifiable acceptance criteria
 
-- Dado…, cuando…, entonces…
+- Given…, when…, then…
 
-## Dependencias y contratos
+## Dependencies and contracts
 
-## Archivos compartidos y coordinación
+## Shared files and coordination
 
-## Errores, permisos y datos
+## Errors, permissions, and data
 
-## Plan de prueba y evidencia
+## Test plan and evidence
 
-## Entrega incremental y recuperación
+## Incremental delivery and recovery
 
-Usar este documento solo si la complejidad lo justifica. Para cambios pequeños basta la issue.
+Use this document only when complexity justifies it. An issue is enough for small changes.

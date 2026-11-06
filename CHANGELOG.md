@@ -1,9 +1,11 @@
-# Historial de cambios
+# Changelog
 
-## Sin publicar
+## Unreleased
 
-- Base documental de colaboración para cuatro personas.
-- Plantillas de tareas y revisiones.
-- Comprobación automática de documentación.
+- Collaboration documentation for a four-person team.
+- Task and review templates.
+- Automated documentation checks.
+- Getting-started guide, task example, and validation guidance.
+- English documentation and templates, with English as the common project language.
 
-No hay todavía una versión publicada del producto.
+There is no published product release yet.

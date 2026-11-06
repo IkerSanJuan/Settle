@@ -1,35 +1,35 @@
-# Arquitectura y contratos
+# Architecture and contracts
 
-Base actual: HTML, CSS y JavaScript sin compilación en `web/`.
+Current baseline: HTML, CSS, and JavaScript in `web/`, with no build step.
 
-| Archivo | Función |
+| File | Purpose |
 | --- | --- |
-| `web/index.html` | Estructura de la página |
-| `web/style.css` | Estilos |
-| `web/data.js` | Catálogo y datos del prototipo |
-| `web/art.js` | Ilustraciones |
-| `web/app.js` | Estado, interacción y recomendaciones |
-| `web/assets/` | Imagen, fuentes y licencias |
+| `web/index.html` | Page structure |
+| `web/style.css` | Styles |
+| `web/data.js` | Catalog and prototype data |
+| `web/art.js` | Illustrations |
+| `web/app.js` | State, interactions, and recommendations |
+| `web/assets/` | Image, fonts, and licenses |
 
-`app.js`, `index.html` y `style.css` son puntos de conflicto. Coordinar cualquier edición compartida en la issue. Antes de cuatro cambios simultáneos, acordar una extracción incremental de módulos por funcionalidad; esta tarea no ha refactorizado la aplicación.
+`app.js`, `index.html`, and `style.css` are likely conflict points. Coordinate shared edits in the issue. Before four simultaneous changes, agree on an incremental extraction of feature modules; this documentation update does not refactor the application.
 
-Organizar el código por funcionalidades cuando encaje con el framework. Compartir componentes o utilidades solo cuando exista una necesidad real. Los módulos no deben depender de detalles internos de otros módulos.
+Organize code by feature when appropriate for the technology. Share components or utilities only for a real need. Modules should not depend on other modules' internal details.
 
-## Contrato entre funcionalidades
+## Contracts between features
 
-Antes de trabajar en paralelo sobre partes conectadas, acordar:
+Before working in parallel on connected parts, agree on:
 
-- Productor y consumidores.
-- Operación o evento y propósito.
-- Entradas y salidas, con tipos y ejemplo.
-- Validación, errores y permisos.
-- Compatibilidad, versionado y estrategia de migración.
-- Responsable del cambio y dependencias entre issues.
+- Producer and consumers.
+- Operation or event and its purpose.
+- Inputs and outputs, with types and an example.
+- Validation, errors, and permissions.
+- Compatibility, versioning, and migration strategy.
+- Change owner and dependencies between issues.
 
-Guardar el contrato junto a su código o en un formato ejecutable propio de la tecnología. Enlazarlo desde la issue. Los cambios incompatibles requieren coordinación con consumidores y una decisión registrada.
+Store the contract alongside its code or in an executable format appropriate to the technology. Link it from the issue. Incompatible changes require coordination with consumers and a recorded decision.
 
-## Archivos compartidos
+## Shared files
 
-Designar en cada issue quién cambia configuración global, dependencias, esquema de datos o componentes compartidos. Mantener esas PR pequeñas e integrarlas antes de las funcionalidades dependientes.
+Identify who will change global configuration, dependencies, data schemas, or shared components in each issue. Keep these PRs small and merge them before dependent features.
 
-Registrar decisiones significativas con la [plantilla ADR](decisions/TEMPLATE.md).
+Record significant decisions using the [ADR template](decisions/TEMPLATE.md).

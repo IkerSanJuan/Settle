@@ -1,58 +1,59 @@
 # Settle
 
-Base de colaboración para **Iker, Augustin, Sandrine y JoJo**.
+A collaboration workspace for **Iker, Augustin, Sandrine, and JoJo**.
 
-Repositorio público: https://github.com/IkerSanJuan/Settle .
-Tablero privado: https://github.com/users/IkerSanJuan/projects/1 .
+[Public repository](https://github.com/IkerSanJuan/Settle) · [Private team board](https://github.com/users/IkerSanJuan/projects/1)
 
-Settle ayuda a estudiantes recién llegados a UC Berkeley a identificar los productos que necesitan para instalarse.
+Settle helps students new to UC Berkeley identify the products they need to settle in.
 
-Incluye el prototipo existente en HTML, CSS y JavaScript, conservado en `web/`, y las reglas de colaboración del equipo. Estado remoto y controles: ver [configuración](docs/GITHUB_SETUP.md).
+This repository includes the existing HTML, CSS, and JavaScript prototype in `web/` and the team's collaboration guidelines. See [GitHub setup](docs/GITHUB_SETUP.md) for the actual configuration and enabled controls.
 
-## Ejecutar el prototipo
+**Project language: English.** Use English for documentation, issues, PRs, commit messages, code comments, and product UI.
+
+## Run the prototype
 
 ```sh
 python3 -m http.server 4177 --bind 127.0.0.1 --directory web
 ```
 
-Abrir http://127.0.0.1:4177 y utilizar la opción de demostración. La autenticación alojada depende de Sites y no funciona en el servidor local. No hay backend ni sincronización entre dispositivos. Precios y recomendaciones son orientativos; no hay inventario, compras ni precios en tiempo real. Ver [límites del prototipo](docs/PROTOTYPE.md).
+Open http://127.0.0.1:4177 and use the demo option. Hosted authentication depends on Sites and does not work on the local server. There is no backend or cross-device synchronization. Prices and recommendations are illustrative; there is no live inventory, purchasing, or live pricing. See [prototype limitations](docs/PROTOTYPE.md).
 
-## Empezar
+## Get started
 
-**Leer primero [Empieza aquí](docs/START_HERE.md)**: reglas mínimas, primer día y coordinación de los cuatro.
+**Read [Start here](docs/START_HERE.md) first** for the essential rules, first-day steps, and coordination across the four teammates.
 
-1. [Descargar y ejecutar Settle](docs/ONBOARDING.md).
-2. [Preparar una tarea concreta](docs/TASK_EXAMPLE.md).
-3. Trabajar en una rama y seguir [el flujo de revisión](CONTRIBUTING.md).
-4. Comprobar [cuándo un cambio está terminado](docs/QUALITY.md).
+1. [Download and run Settle](docs/ONBOARDING.md).
+2. [Prepare a concrete task](docs/TASK_EXAMPLE.md).
+3. Work on a branch and follow [the review workflow](CONTRIBUTING.md).
+4. Check [the definition of done](docs/QUALITY.md).
 
-## Documentación
+## Documentation
 
-| Archivo | Para qué sirve |
+| File | Purpose |
 | --- | --- |
-| [START_HERE.md](docs/START_HERE.md) | Guía breve para empezar a trabajar |
-| [TASK_EXAMPLE.md](docs/TASK_EXAMPLE.md) | Ejemplo de tarea y criterios de aceptación |
-| [CONTRIBUTING.md](CONTRIBUTING.md) | Ramas, commits, revisión y conflictos |
-| [Invitar al equipo](docs/INVITAR_EQUIPO.md) | Acceso e incorporación de los tres compañeros |
-| [TEAM.md](docs/TEAM.md) | Coordinación entre los cuatro |
-| [PRODUCT.md](docs/PRODUCT.md) | Objetivo, alcance y prioridades |
-| [ONBOARDING.md](docs/ONBOARDING.md) | Incorporación y ejecución local |
-| [ARCHITECTURE.md](docs/ARCHITECTURE.md) | Módulos y contratos compartidos |
-| [QUALITY.md](docs/QUALITY.md) | Criterios de terminado y validación |
-| [GITHUB_SETUP.md](docs/GITHUB_SETUP.md) | Estado real y configuración de GitHub |
-| [RELEASES.md](docs/RELEASES.md) | Versiones y recuperación |
-| [SECURITY.md](SECURITY.md) | Secretos e incidencias de seguridad |
-| [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) | Convivencia |
-| [decisions](docs/decisions/README.md) | Registro de decisiones |
-| [features](docs/features/TEMPLATE.md) | Plantilla de funcionalidad |
-| [STANDARDS.md](docs/STANDARDS.md) | Fuentes y prácticas adoptadas |
+| [START_HERE.md](docs/START_HERE.md) | Short guide to getting started |
+| [TASK_EXAMPLE.md](docs/TASK_EXAMPLE.md) | Example task and acceptance criteria |
+| [CONTRIBUTING.md](CONTRIBUTING.md) | Branches, commits, reviews, and conflicts |
+| [INVITING_TEAM.md](docs/INVITING_TEAM.md) | Access and invitations for teammates |
+| [TEAM.md](docs/TEAM.md) | Coordination across the four teammates |
+| [PRODUCT.md](docs/PRODUCT.md) | Purpose, scope, and priorities |
+| [ONBOARDING.md](docs/ONBOARDING.md) | Joining the project and running it locally |
+| [ARCHITECTURE.md](docs/ARCHITECTURE.md) | Modules and shared contracts |
+| [QUALITY.md](docs/QUALITY.md) | Definition of done and validation |
+| [GITHUB_SETUP.md](docs/GITHUB_SETUP.md) | Actual GitHub configuration and pending setup |
+| [RELEASES.md](docs/RELEASES.md) | Versions and recovery |
+| [SECURITY.md](SECURITY.md) | Secrets and security incidents |
+| [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) | Working respectfully together |
+| [decisions](docs/decisions/README.md) | Decision records |
+| [features](docs/features/TEMPLATE.md) | Feature specification template |
+| [STANDARDS.md](docs/STANDARDS.md) | Sources and adopted practices |
 
-Las issues serán la fuente de verdad del trabajo; GitHub Projects mostrará su estado. Los Markdown conservarán acuerdos y decisiones duraderas. No duplicar un backlog en este README.
+Issues are the source of truth for work; GitHub Projects shows its status. Markdown files hold lasting agreements and decisions. Do not duplicate the backlog in this README.
 
-## Validación disponible
+## Available validation
 
-Con Python 3: `python3 scripts/check_docs.py`. Revisa archivos documentales requeridos y destinos de enlaces Markdown relativos; no prueba el producto ni verifica enlaces externos o anclas.
+With Python 3: `python3 scripts/check_docs.py`. It checks required documents and simple relative Markdown link destinations. It does not test the product or validate external links or anchors.
 
-## Licencia
+## License
 
-Pendiente de decidir por los titulares antes de distribuir el proyecto. No se ha asignado una licencia de código abierto.
+The rights holders have not yet selected a project license. No open-source license has been assigned. Preserve existing third-party credits and licenses.

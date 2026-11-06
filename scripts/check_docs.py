@@ -6,7 +6,7 @@ from urllib.parse import unquote, urlsplit
 
 root = Path(__file__).resolve().parents[1]
 required = ["README.md", "CONTRIBUTING.md", "SECURITY.md", "CODE_OF_CONDUCT.md",
-            "docs/TEAM.md", "docs/GITHUB_SETUP.md", "docs/INVITAR_EQUIPO.md"]
+            "docs/TEAM.md", "docs/GITHUB_SETUP.md", "docs/INVITING_TEAM.md"]
 errors = [f"Missing: {name}" for name in required if not (root / name).is_file()]
 for path in root.rglob("*.md"):
     if ".git" in path.parts:

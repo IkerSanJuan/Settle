@@ -1,67 +1,69 @@
-# Cómo contribuir
+# Contributing
 
-¿Es tu primera tarea? Empieza por [la guía breve](docs/START_HERE.md) y el [ejemplo de issue](docs/TASK_EXAMPLE.md).
+First task? Start with [the short guide](docs/START_HERE.md) and [the example issue](docs/TASK_EXAMPLE.md).
 
-## Flujo diario
+Use **English** for documentation, issues, PRs, commit messages, code comments, and product UI.
 
-1. Elegir una issue en Ready, comprobar dependencias y asignar un responsable y un revisor distinto.
-2. Actualizar `main` y crear una rama por tarea. Cada persona trabaja en su propia copia local.
-3. Abrir pronto una PR en borrador y enlazar la issue. Mantener un cambio pequeño y coherente.
-4. Actualizar la rama con `main`, ejecutar las comprobaciones y pedir revisión.
-5. Corregir observaciones; integrar con **Squash and merge** cuando la revisión y los controles estén aprobados. Eliminar la rama remota integrada.
+## Daily workflow
 
-No trabajar directamente sobre `main`. No mantener ramas permanentes por persona ni una rama `develop` sin necesidad real.
+1. Choose an issue in Ready, check dependencies, and agree on one owner and a different reviewer.
+2. Update `main` and create one branch per task. Everyone works in their own local clone.
+3. Open a draft PR early and link the issue. Keep the change small and coherent.
+4. Update the branch with `main`, run checks, and request review.
+5. Address feedback; use **Squash and merge** once review and checks pass. Delete the merged remote branch.
 
-## Comandos de ejemplo
+Do not work directly on `main`. Avoid permanent branches per person or a `develop` branch without a concrete need.
 
-Tras clonar el repositorio y entrar en su carpeta:
+## Example commands
+
+After cloning the repository and entering its directory:
 
 ```sh
 git switch main
 git pull --ff-only origin main
-git switch -c feat/12-descripcion
-# Editar y revisar los cambios; sustituir ruta-del-archivo por un archivo real.
-git add ruta-del-archivo
-git commit -m "feat(modulo): describe el cambio"
+git switch -c feat/12-description
+# Edit and review your changes; replace path-to-file with an actual file.
+git add path-to-file
+git commit -m "feat(module): describe the change"
 git push -u origin HEAD
 ```
 
-Ramas: `feat/12-descripcion`, `fix/24-descripcion`, `docs/31-descripcion`, `chore/40-descripcion`. Los agentes automáticos usarán `codex/12-descripcion`.
+Branches: `feat/12-description`, `fix/24-description`, `docs/31-description`, or `chore/40-description`. Automated assistants use `codex/12-description`.
 
-## Commits y títulos de PR
+## Commits and PR titles
 
-Usar Conventional Commits: `tipo(ambito): descripción`. El ámbito es opcional.
-Tipos habituales: `feat`, `fix`, `docs`, `test`, `refactor`, `chore`, `ci`.
-El título de PR se usará como mensaje del commit integrado. Ejemplo: `feat(perfil): permite editar el nombre`.
-Un cambio incompatible se indica con `!` y se explica en el cuerpo con `BREAKING CHANGE:`.
+Use Conventional Commits: `type(scope): description`. The scope is optional.
+Common types: `feat`, `fix`, `docs`, `test`, `refactor`, `chore`, `ci`.
+The PR title becomes the squash commit message. Example: `feat(profile): allow editing the name`.
+Mark incompatible changes with `!` and explain them in the body with `BREAKING CHANGE:`.
 
-## Evitar conflictos mientras trabajamos en paralelo
+## Avoid conflicts while working in parallel
 
-- Antes de programar, indicar módulos y archivos compartidos afectados en la issue.
-- Acordar primero los contratos entre módulos: entradas, salidas, errores y ejemplos.
-- Integrar cambios de contratos o configuración en una PR pequeña previa cuando otros dependan de ellos.
-- Reservar un único responsable por cambio en dependencias, migraciones, configuración y archivos de bloqueo; avisar a los demás en la issue.
-- Sincronizar con `main` al empezar y antes de pedir revisión. Si una tarea se alarga, dividirla en incrementos funcionales.
-- Para funcionalidades dependientes, usar contratos acordados y simulaciones temporales claramente identificadas. Integrar primero la dependencia.
+- Before coding, list affected modules and shared files in the issue.
+- Agree on contracts between modules first: inputs, outputs, errors, and examples.
+- Merge contract or configuration changes in a small prerequisite PR when others depend on them.
+- Assign one owner to each change involving dependencies, migrations, configuration, or lockfiles; notify teammates in the issue.
+- Synchronize with `main` at the start and before requesting review. Split longer tasks into working increments.
+- For dependent features, use agreed contracts and clearly identified temporary mocks. Merge the dependency first.
 
-## Resolver un conflicto
+## Resolve a conflict
 
-Con el trabajo guardado en commits, desde la rama de la tarea:
+With your work committed, from the task branch:
 
 ```sh
 git fetch origin
 git merge origin/main
-# Resolver cada archivo con la persona responsable; revisar el resultado.
-git add ruta-resuelta
+# Resolve each file with its owner and review the result.
+git add resolved-file
 git commit
 git push
 ```
 
-Para cancelar una resolución que no se entiende: `git merge --abort`.
-No aceptar automáticamente todo un lado del conflicto. Volver a ejecutar pruebas. Regenerar archivos de bloqueo con el gestor del proyecto. No reescribir una rama compartida ni usar force push.
+To cancel a merge you cannot resolve confidently: `git merge --abort`.
+Do not automatically accept one entire side of a conflict. Rerun tests. Regenerate lockfiles using the project's package manager. Do not rewrite shared branches or force-push.
 
-## Revisión
+## Review
 
-Una aprobación de otra persona con acceso de escritura es el mínimo. El autor no aprueba su propia PR. Explicar los comentarios como bloqueo, sugerencia o pregunta. Revisar comportamiento, claridad, seguridad, pruebas y documentación. Para autenticación, datos o migraciones, solicitar además la revisión de quien conoce ese ámbito.
+At least one approval from another person with write access is required by the team. Authors do not approve their own PRs. Label feedback as a blocker, suggestion, or question. Review behavior, clarity, security, tests, and documentation. For authentication, data, or migrations, also involve someone familiar with that area.
 
-Objetivo del equipo: responder a revisiones en un día laborable, avisando de ausencias. Este plazo es un acuerdo propuesto, no una exigencia de GitHub.
+Team target: respond to review requests within one business day and communicate absences. This is a proposed team agreement, not a GitHub requirement. See [GitHub setup](docs/GITHUB_SETUP.md) for enforcement status.

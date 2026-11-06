@@ -1,25 +1,25 @@
 ---
-name: Funcionalidad
-about: Proponer un incremento verificable del producto
-title: "[Funcionalidad] "
+name: Feature
+about: Propose a verifiable product increment
+title: "[Feature] "
 ---
 
-## Problema del usuario
+## User problem
 
-## Resultado y alcance
+## Outcome and scope
 
-## Criterios de aceptación
+## Acceptance criteria
 
-- [ ] Dado…, cuando…, entonces…
+- [ ] Given…, when…, then…
 
-## Coordinación
+## Coordination
 
-Responsable:
-Revisor:
-Dependencias (issues):
-Módulos y archivos compartidos:
-Contrato acordado:
+Owner:
+Reviewer:
+Dependencies (issues):
+Modules and shared files:
+Agreed contract:
 
-## Pruebas previstas
+## Planned tests
 
-## Fuera de alcance
+## Out of scope
