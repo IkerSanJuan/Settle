@@ -3,6 +3,7 @@
 Base de colaboración para **Iker, Augustin, Sandrine y JoJo**.
 
 Repositorio privado: https://github.com/IkerSanJuan/Settle .
+Tablero privado: https://github.com/users/IkerSanJuan/projects/1 .
 
 Settle ayuda a estudiantes recién llegados a UC Berkeley a identificar los productos que necesitan para instalarse.
 

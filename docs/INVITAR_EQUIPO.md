@@ -19,3 +19,9 @@ Aceptar la invitación con la cuenta correcta y seguir [ONBOARDING.md](ONBOARDIN
 Actualizar los usuarios en [TEAM.md](TEAM.md) y activar `.github/CODEOWNERS` con los usuarios reales. Una regla global con los cuatro permite solicitar revisión al equipo; asignar después responsables por módulo si resulta útil. Verificar permisos de escritura y disponibilidad de CODEOWNERS según el plan.
 
 Hacer una prueba: cada persona abre una PR pequeña desde su rama, otra revisa y el autor integra con squash. Comprobar también que GitHub rechaza cambios directos a `main` cuando las protecciones estén activas.
+
+## Dar acceso al tablero privado
+
+Abrir https://github.com/users/IkerSanJuan/projects/1/settings/access . Añadir los usuarios de Augustin, Sandrine y JoJo con permiso de escritura para que puedan gestionar sus tareas. El acceso al repositorio y al tablero se concede por separado; comprobar ambos con cada persona.
+
+El tablero está vacío y no importa tareas automáticamente. Crear las issues del primer reparto acordado y añadirlas manualmente al tablero.

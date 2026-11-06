@@ -12,7 +12,7 @@ Verificado el 6 de noviembre de 2026:
 - GitHub muestra que las reglas no se aplicarán en este repositorio privado con la configuración de cuenta actual. No hay protección efectiva de `main`; la revisión es por ahora un acuerdo manual.
 - Dependabot activo para Actions; ha generado una PR de actualización, pendiente de revisión.
 - Invitaciones a cargo de Iker. CODEOWNERS pendiente de usuarios; contiene solo comentarios.
-- Tablero pendiente de autorización específica de creación.
+- Tablero privado creado, sin importación de tareas: https://github.com/users/IkerSanJuan/projects/1 . Repositorio predeterminado: IkerSanJuan/Settle. Acceso de los compañeros pendiente.
 
 ## Ajustes del repositorio
 
@@ -40,7 +40,7 @@ Las protecciones de ramas y CODEOWNERS en repositorios privados dependen del pla
 
 ## GitHub Projects
 
-Crear un Project privado, enlazar el repositorio y compartir su acceso por separado si hace falta. Columnas: Backlog, Ready, In progress, In review, Done. Añadir campos Priority, Size y Area; utilizar Assignees para responsables. Crear issues desde el reparto de PRODUCT después de acordarlo. No hay tablero creado por estos archivos.
+Tablero privado creado: https://github.com/users/IkerSanJuan/projects/1 . Compartir su acceso por separado desde Settings → Manage access. Columnas: Backlog, Ready, In progress, In review, Done. Añadir campos Priority, Size y Area; utilizar Assignees para responsables. Crear issues desde el reparto de PRODUCT después de acordarlo. El tablero está vacío por decisión de Iker, sin importación automática de tareas. Tiene campos Priority, Size y Estimate; Area queda como ampliación opcional.
 
 ## Seguridad
 
@@ -52,6 +52,7 @@ Activar alertas de Dependabot y las funciones de análisis de secretos disponibl
 - [x] Workflow ejecutado correctamente en GitHub.
 - [ ] Protecciones activas y probadas con PR de ejemplo.
 - [ ] Tres invitaciones aceptadas y CODEOWNERS actualizado.
-- [ ] Tablero creado y compartido.
+- [x] Tablero privado creado.
+- [ ] Acceso al tablero compartido con los tres compañeros.
 
 No marcar pasos solo porque estén documentados.
